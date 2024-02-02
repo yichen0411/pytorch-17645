@@ -3320,7 +3320,7 @@ def l1_loss(
     """
     
     if reduction == "sum":
-        raise ValueError("'sum' is not supported.")
+        raise ValueError("'sum'  is not supported.")
         
     if has_torch_function_variadic(input, target):
         return handle_torch_function(
